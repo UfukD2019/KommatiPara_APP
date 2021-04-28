@@ -9,8 +9,8 @@ COPY Kommati_Para_App.py /home/Kommati_Para_App.py
 STOPSIGNAL SIGTERM
 WORKDIR /home
 
-COPY requirements.txt /home/requirements.txt
-RUN pip3 install -r requirements.txt
+#COPY requirements.txt /home/requirements.txt
+#RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 
