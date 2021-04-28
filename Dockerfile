@@ -5,7 +5,7 @@ RUN apt-get install python3 -y
 RUN apt-get install python3-pip -y
 
 ENV HOME /home
-COPY dbot.py /home/dbot.py
+COPY Kommati_Para_App.py /home/Kommati_Para_App.py
 STOPSIGNAL SIGTERM
 WORKDIR /home
 
@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 
-CMD ["dbot.py"]
+CMD ["Kommati_Para_App.py"]
