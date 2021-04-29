@@ -110,7 +110,8 @@ After the installation is completed, you can clone my github repository in your 
 
 ![path](../main/images/path.png)
 
-First aim of this app is to filter the first dataset according to the selected countries. For this purpose, filtering function has been created. First of all, User should enter how many countries user wants to filter. After that, User should choose the countries' number in the list. 
+First aim of this app is to filter the first dataset according to the selected countries. For this purpose, filtering function has been created. First of all, User should enter how many countries user wants to filter. After that, User should choose the countries' number in the list. In our dataset there are 4 countries and we want to filter acoording to the United Kingdom and the Netherlands. Therefore user enter '2', you can see in the image marked with yellow box. Then, user enter '3' for the United Kingdom and '4' for the Netherlands as you can see in the image marked with red box. Function does not allow the user to enter a string value or a number greater than number of countries.
+
 # Challange
 
 I have difficulty in importing functions from application file to test file. Jupyter notebook run the codes cell by cell. Therefore, whenever I call the function, it generates ERROR related to 'logging' because logging codes are in different cells. In order to solve this problem, I created logger function and send to the filtering function. Thus, whenever filtering function is called, logging function runs too. If someone has a different solution, please feel free to contribute to this project. 
