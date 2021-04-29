@@ -106,9 +106,9 @@ import csv
 
 # Usage
 
-After the installation is completed, you can clone my github repository in your computer. I used in this project Anaconda Navigator Jupyter Notebook. You can use my datasets or you can use your own datasets because in this app filtering and renaming functions are generic. The logic of this app is based on filtering datasets according to the selected countries. Therefore if you use your datasets, they should include country column. User should enter the paths of datasets and the application is created to read CSV file.  
+After the installation is completed, you can clone my github repository in your computer. I used in this project Anaconda Navigator Jupyter Notebook. You can use my datasets or you can use your own datasets because in this app filtering and renaming functions are generic. The logic of this app is based on filtering datasets according to the selected countries. Therefore if you use your datasets, they should include country column. User should enter the paths of datasets which have to be same format as marked in the picture and the application is created to read CSV file.  
 
-
+![path](../main/images/path.png)
 # Challange
 
 I have difficulty in importing functions from application file to test file. Jupyter notebook run the codes cell by cell. Therefore, whenever I call the function, it generates ERROR related to 'logging' because logging codes are in different cells. In order to solve this problem, I created logger function and send to the filtering function. Thus, whenever filtering function is called, logging function runs too. If someone has a different solution, please feel free to contribute to this project. 
