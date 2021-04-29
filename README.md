@@ -114,7 +114,11 @@ First aim of this app is to filter the first dataset according to the selected c
 
 ![path](../main/images/Filtering.png)
 
-After filtering, drop function has been used to remove personal identifiable information from the first dataset, excluding emails and cc_n column from the second dataset. 
+After filtering, drop function has been used to remove personal identifiable information from the first dataset, excluding emails and cc_n column from the second dataset. Then renaming function has been created in order to rename the columns for the easier readability to the business users. To do this, renaming function request the new names for the columns. In our example, we change 'id' column as 'client_identifier', 'btc_a' as 'bitcoin_address' and 'cc_t' as 'credit_card_type' as marked in the image with yellow box. You can also see the change market with red box. If user do not want to change the name of column or columns, press only **enter** button. 
+
+![path](../main/images/renaming.png)
+
+
 # Challange
 
 I have difficulty in importing functions from application file to test file. Jupyter notebook run the codes cell by cell. Therefore, whenever I call the function, it generates ERROR related to 'logging' because logging codes are in different cells. In order to solve this problem, I created logger function and send to the filtering function. Thus, whenever filtering function is called, logging function runs too. If someone has a different solution, please feel free to contribute to this project. 
