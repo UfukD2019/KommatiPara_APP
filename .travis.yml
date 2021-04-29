@@ -1,3 +1,2 @@
-language : python
-py:
-  -openpy3.8.8
+language: python
+
