@@ -28,15 +28,6 @@ PySpark installation using PyPI is as follows: ```bash
 $ pip install pyspark ```
 
 
-Import findspark from your notebook and initilaze it as follows:
-```python
-import findspark
-
-findspark.init() 
-```
-
-
-
 ## For chispa test
 
 Install the chispa with: 
@@ -44,9 +35,15 @@ Install the chispa with:
 pip install chispa 
 ```
 
-# Usage
+# Configuration
 
 ##  Spark session
+
+```python
+import findspark
+
+findspark.init() 
+```
 
 ```python import pyspark
 from pyspark.sql import SparkSession
@@ -70,7 +67,7 @@ import pytest
 from chispa.column_comparer import assert_column_equality
 ```
 
-## Configuration of logging
+##  Logging
 
 ```python 
 import logging
@@ -106,6 +103,10 @@ logger = logger()
 ```python
 import csv
 ```
+
+# Usage
+
+
 
 # Challange
 
