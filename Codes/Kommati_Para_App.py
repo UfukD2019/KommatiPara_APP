@@ -165,8 +165,6 @@ value = [row[0] for row in dataset_one.select('country').distinct().collect()]
 key =[ x for x in range(1,(len(value)+1))]
 dic_of_country_name = dict(zip(key,value) )
 
-print(dic_of_country_name)
-
 dataset_one = filtering(dataset_one, dic_of_country_name, logger)
 dataset_one.show()
 logger.info("INFO: Dataset_one has been filtered according to the selected countries.")
@@ -252,7 +250,7 @@ EnhancedDataset.show()
 logger.info("INFO: Two datasets has been joined.")
 
 
-# In[13]:
+# In[12]:
 
 
 #the output of this assignment is saved in a client_data folder.
