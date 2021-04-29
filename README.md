@@ -87,14 +87,14 @@ def logger():
     logger.setLevel(logging.INFO)
 
 
-    if not logger.handlers:
-        streamhandler = logging.StreamHandler()
-        streamhandler.setLevel(logging.INFO)
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
-        streamhandler.setFormatter(formatter)
+    logger.handlers:
+    streamhandler = logging.StreamHandler()
+    streamhandler.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
+    streamhandler.setFormatter(formatter)
 
-        logger.addHandler(streamhandler)
-        logger.addHandler(logHandler)
+    logger.addHandler(streamhandler)
+    logger.addHandler(logHandler)
 
     return logger 
 
