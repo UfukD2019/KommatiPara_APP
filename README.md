@@ -112,6 +112,17 @@ After the installation is completed, you can clone my github repository in your 
 
 First aim of this app is to filter the first dataset according to the selected countries. For this purpose, filtering function has been created. First of all, User should enter how many countries user wants to filter. After that, User should choose the countries' number in the list. In our dataset there are 4 countries and we want to filter acoording to the United Kingdom and the Netherlands. Therefore user enter '2', you can see in the image marked with yellow box. Then, user enter '3' for the United Kingdom and '4' for the Netherlands as you can see in the image marked with red box. Function does not allow the user to enter a string value or a number greater than number of countries.
 
+![path](../main/images/Filter.png)
+
+After filtering, drop function has been used to remove personal identifiable information from the first dataset, excluding emails and cc_n column from the second dataset. Then renaming function has been created in order to rename the columns for the easier readability to the business users. To do this, renaming function request the new names for the columns. In our example, we change 'id' column as 'client_identifier', 'btc_a' as 'bitcoin_address' and 'cc_t' as 'credit_card_type' as marked in the image with yellow box. You can also see the change market with red box. If user do not want to change the name of column or columns, press only **enter** button. 
+
+![path](../main/images/renaming.png)
+
+Finally, When all the necessary change is done, app joins two datasets by using 'client_identifier' column as you can see in the image. Then the app request a location path that user wants to save the dataset.
+
+![path](../main/images/join.png)
+
+
 # Challange
 
 I have difficulty in importing functions from application file to test file. Jupyter notebook run the codes cell by cell. Therefore, whenever I call the function, it generates ERROR related to 'logging' because logging codes are in different cells. In order to solve this problem, I created logger function and send to the filtering function. Thus, whenever filtering function is called, logging function runs too. If someone has a different solution, please feel free to contribute to this project. 
