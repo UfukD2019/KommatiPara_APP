@@ -106,7 +106,7 @@ import csv
 
 # Usage
 
-After the installation is completed, you can clone my github repository in your computer. I used in this project Anaconda Navigator Jupyter Notebook. You can use my datasets or you can use your own datasets because in this app filtering and renaming functions are generic. The logic of this app is based on filtering datasets according to the selected countries. Therefore if you use your datasets, they should include country column. The application requests the inputs two paths for two different dataset files 
+After the installation is completed, you can clone my github repository in your computer. I used in this project Anaconda Navigator Jupyter Notebook. You can use my datasets or you can use your own datasets because in this app filtering and renaming functions are generic. The logic of this app is based on filtering datasets according to the selected countries. Therefore if you use your datasets, they should include country column. User should enter the paths of datasets and the application is created to read CSV file.  
 
 
 # Challange
