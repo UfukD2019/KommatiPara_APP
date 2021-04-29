@@ -118,7 +118,9 @@ After filtering, drop function has been used to remove personal identifiable inf
 
 ![path](../main/images/renaming.png)
 
-When all the necessary change is done, app joins two datasets by using 'client_identifier' column.
+Finally, When all the necessary change is done, app joins two datasets by using 'client_identifier' column as you can see in the image. Then the app request a location path that user wants to save the dataset.
+
+![path](../main/images/join.png)
 
 
 # Challange
