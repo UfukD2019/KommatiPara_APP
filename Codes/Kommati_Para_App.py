@@ -245,7 +245,7 @@ dataset_two = datasets['dataset_2']
 
 # two datasets are joined according to the client_identifier 
 
-EnhancedDataset=dataset_one.join(dataset_two,dataset_one.client_identifier == dataset_two.client_identifier).select(dataset_one.client_identifier, dataset_one.email, dataset_two.bitcoin_address, dataset_two.credit_card_type)
+EnhancedDataset = dataset_one.join(dataset_two,dataset_one.client_identifier == dataset_two.client_identifier).select(dataset_one.client_identifier, dataset_one.email, dataset_two.bitcoin_address, dataset_two.credit_card_type)
 EnhancedDataset.show()
 logger.info("INFO: Two datasets has been joined.")
 
